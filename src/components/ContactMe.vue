@@ -19,42 +19,53 @@
 </template>
 
 <style scoped>
+
+@media (prefers-color-scheme: dark) {
+  input, textarea, button {
+    background: var(--color-background-soft);
+  }
+}
+
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
   font-family: "Lexend", Arial, Helvetica, sans-serif;
+  color: var(--color-text);
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-family: "Lexend", Arial, Helvetica, sans-serif;
+  color: var(--color-text);
 }
 
 input:-moz-placeholder, textarea:-moz-placeholder {
   font-family: "Lexend", Arial, Helvetica, sans-serif;
+  color: var(--color-text);
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   font-family: "Lexend", Arial, Helvetica, sans-serif;
+  color: var(--color-text);
 }
 
 input, textarea, button {
-  border: 1px solid black;
+  border: 1.5px solid var(--color-text);
   border-radius: 10px;
   margin: 5px;
   font-size: 1.12rem;
-  font-weight: 400;
+  font-weight: 300;
   padding: 10px;
   width: 100%;
 }
 
 button {
-  background-color: hsla(200, 100%, 37%, 0.2);
-  color: #394CE2;
+  background-color: var(--color-button);
+  color: var(--color-text);
   font-weight: 600;
   font-size: 1.17rem;
 }
 
 button:hover {
-  background-color: hsla(200, 100%, 37%, 0.2);
-  color: #394CE2; 
+  background-color: var(--vt-c-orange-trans);
+  color: var(--color-text); 
   transition: 1s;
 }
 
@@ -74,10 +85,6 @@ button:hover {
     padding: 10px;
   }
 
-  button {
-    background-color: white;
-    color: #394CE2;
-
   .name input {
     width: calc(50% - 5px);
   }
@@ -85,6 +92,5 @@ button:hover {
   .name input:last-of-type {
     margin-right: 0px;
   }
-}
 }
 </style>

@@ -5,7 +5,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Norpac Dive Services logo" class="logo" src="@/assets/norpac-dive-logo.jpg" width="250" height="250" />
+    <picture>
+      <source alt="Norpac Dive Services logo" class="logo" srcset="@/assets/norpac-dive-logo-dark.jpg" width="250" height="250" media="(prefers-color-scheme:dark)" />
+      <img alt="Norpac Dive Services logo" class="logo" src="@/assets/norpac-dive-logo.jpg" width="250" height="250" />
+    </picture>
 
     <div class="wrapper">
       <HelloWorld msg="Norpac Dive Services" />
@@ -28,7 +31,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 2rem auto 2rem;
 }
 
 nav {
@@ -44,17 +47,25 @@ nav a.router-link-exact-active {
 
 nav a.router-link-exact-active:hover {
   background-color: transparent;
+  cursor: default;
 }
 
 nav a {
   display: inline-block;
   font-size: 1.25rem;
-  padding: 0 1rem;
+  padding: 2px 1rem 8px;
   border-left: 1px solid var(--color-border);
+  border-radius: 4px;
 }
 
 nav a:first-of-type {
   border: 0;
+}
+
+nav a:not(.router-link-exact-active) {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
 }
 
 @media (min-width: 1024px) {

@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  color: #FF8800;
+  color: var(--vt-c-orange);
 }
 
 .greetings h1,

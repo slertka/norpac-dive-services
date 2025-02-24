@@ -1,8 +1,6 @@
 <script>
-import ContactMe from '@/components/ContactMe.vue';
 
 export default {
-
   name: "ContactView",
   data() {
       return { success: false };
@@ -65,17 +63,25 @@ h3 {
 }
 
 .success {
-    background: hsla(347, 100%, 61%, 1);
+    background: var(--vt-c-pink);
     color: white;
-    border: 1px solid hsla(347, 100%, 61%, 1);
+    border: var(--vt-c-pink);
     border-radius: 10px;
     padding: 5px;
     text-align: center;
+    margin: 2rem auto;
+}
+
+@media (min-width: 768px) {
+  .success {
+    max-width: 500px;
+  }
 }
 
 @media (min-width: 1024px) {
   h3 {
     padding: 0;
+    font-size: 1.12rem;
   }
 
   .contact {

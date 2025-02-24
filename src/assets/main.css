@@ -10,15 +10,15 @@
 a,
 .blue {
   text-decoration: none;
-  color: #394CE2;
-  /* color: hsla(200, 100%, 37%, 1); */
+  color: var(--vt-c-cobalt-blue);
   transition: 0.4s;
   padding: 3px;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(200, 100%, 37%, 0.2);
+    background-color: var(--vt-c-light-blue);
+    padding: 2px;
   }
 }
 
@@ -31,6 +31,5 @@ a,
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* padding: 0 2rem; */
   }
 }

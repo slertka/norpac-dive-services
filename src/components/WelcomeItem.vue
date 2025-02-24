@@ -44,13 +44,13 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
-  color: #FF3C62;
+  color: var(--vt-c-pink);
 }
 
 @media (min-width: 1024px) {
   .item {
     margin-top: 0;
-    padding: 0 0 0 calc(var(--icon-size));
+    padding: 0 calc(var(--icon-size) /4) 0 calc(var(--icon-size));
     margin: var(--section-v-gap) 0 var(--section-v-gap) 0;
     min-height: calc(var(--icon-size));
   }
@@ -60,7 +60,7 @@ h2 {
   }
 
   .item:last-of-type {
-    padding-bottom: 0;
+    padding: 0 calc(var(--icon-size) /4) 0 calc(var(--icon-size));
   }
 
   i {
