@@ -5,13 +5,13 @@
             <input type="text" placeholder="Last Name" name="last-name" class="w-full p-2 border rounded-lg" required/>
         </div>
         <div>
-            <input class="full-width" type="text" name="phone" placeholder="(888) 333-1234" />
+            <input class="full-width" type="text" name="phone" placeholder="Phone" />
         </div>
         <div>
-            <input class="full-width" type="email" name="email" placeholder="email@diveforme.com"/>
+            <input class="full-width" type="email" name="email" placeholder="Email"/>
         </div>
         <div>
-            <textarea type="text" placeholder="What's going on?" rows="4" required/>
+            <textarea type="text" placeholder="Description" rows="4" required/>
         </div>
         <input type="hidden" name="_next" value="http://www.norpacdiveservices.com/about?success=true">
         <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg">Send Message</button>
@@ -23,6 +23,7 @@
 @media (prefers-color-scheme: dark) {
   input, textarea, button {
     background: var(--color-background-soft);
+    color: var(--vt-c-white-muted)
   }
 }
 
@@ -51,7 +52,7 @@ input, textarea, button {
   border-radius: 10px;
   margin: 5px;
   font-size: 1.12rem;
-  font-weight: 300;
+  font-weight: 400;
   padding: 10px;
   width: 100%;
 }

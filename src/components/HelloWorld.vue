@@ -1,8 +1,8 @@
 <template>
   <div class="greetings">
-    <h1 class="blue">{{ msg }}</h1>
+    <h1>{{ msg }}</h1>
     <h2>
-      Serving the Puget Sound Area
+      Serving the Puget Sound Region
     </h2>
   </div>
 </template>
@@ -21,10 +21,6 @@ h1 {
   font-weight: 600;
   position: relative;
   top: -10px;
-}
-
-h2 {
-  color: var(--vt-c-orange);
 }
 
 .greetings h1,

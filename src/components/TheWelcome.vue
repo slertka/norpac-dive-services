@@ -27,6 +27,6 @@ import BuoyIcon from './icons/IconBuoy.vue'
       <ToolingIcon />
     </template>
     <template #heading>Salvage</template>
-    Retrieval of lost underwater items ranging from full vessel salvage to lost phone retrieval.
+    Retrieval of lost underwater items ranging from lost phone retrieval to full vessel salvage.
   </WelcomeItem>
 </template>
