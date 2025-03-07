@@ -1,5 +1,5 @@
 <template>
-    <form id="send-email" action="https://formsubmit.co/norpacdiveservices@gmail.com" method="POST">
+    <form id="send-email" action="e2c6f9ebf264760208aa841764ce1d1d" method="POST">
         <div class="name">
             <input type="text" placeholder="First Name" name="first-name" class="w-full p-2 border rounded-lg" required/>
             <input type="text" placeholder="Last Name" name="last-name" class="w-full p-2 border rounded-lg" required/>
