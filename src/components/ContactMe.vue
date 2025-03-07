@@ -11,9 +11,9 @@
             <input class="full-width" type="email" name="email" placeholder="Email"/>
         </div>
         <div>
-            <textarea type="text" placeholder="Description" rows="4" required/>
+            <textarea type="text" placeholder="Description" name="description" rows="4" required/>
         </div>
-        <input type="hidden" name="_next" value="https://www.norpacdiveservices.com/about?success=true">
+        <input type="hidden" name="_next" value="https://norpacdiveservices.com/">
         <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg">Send Message</button>
     </form>
 </template>
